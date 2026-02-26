@@ -7,7 +7,7 @@ def hello_world():
 
 @app.route('/hello')
 def hello_home():
-    return render_template('home.html')
+    return render_template('guest_run_home.html')
 
 if __name__ == '__main__':
     app.run(port=8000)
