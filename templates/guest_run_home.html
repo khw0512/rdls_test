@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guest Run - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7bf425",
+                        "background-light": "#f7f8f5",
+                        "background-dark": "#172210",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-primary/10">
+<div class="flex size-12 shrink-0 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary" data-alt="User profile picture of a runner" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQfIIGdoGCV4Ntm9nHaPJYD7ndXCQXGeXWhm03zYha4WX8lWFC-UJzVdDVxKA8ouuCaOQNCXG3Onfmb30Tw3KBtj_h_STRhSMsYkfERXNUloMgqzGwLBbCzFeYpr24IVPzAacA15pCM8R7nlyKtE2UB3WkuTpzMkioFofRv8vk-z6Ie-SyTMHQv5wjYkc5E9Wv4IP5gVVRBa-IcC6tXrdZZnsqxAXE48LNCH9Ulp8NcCdHk4atSWHOuQLQrm0gWdTuskFQYRamfrAa");'></div>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight flex-1 text-center">Guest Run</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<!-- Search Section -->
+<div class="px-4 py-4">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+<div class="text-slate-400 dark:text-primary/60 flex border-none bg-white dark:bg-primary/5 items-center justify-center pl-4 rounded-l-xl">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-2 focus:ring-primary/50 border-none bg-white dark:bg-primary/5 h-full placeholder:text-slate-400 dark:placeholder:text-primary/30 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search crews or runs" value=""/>
+</div>
+</label>
+</div>
+<!-- Filters -->
+<div class="flex gap-3 px-4 pb-2 overflow-x-auto no-scrollbar">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-primary/10 border border-primary/20 px-4">
+<p class="text-slate-700 dark:text-slate-200 text-sm font-medium leading-normal">Distance</p>
+<span class="material-symbols-outlined text-primary text-[20px]">keyboard_arrow_down</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-primary/10 border border-primary/20 px-4">
+<p class="text-slate-700 dark:text-slate-200 text-sm font-medium leading-normal">Pace</p>
+<span class="material-symbols-outlined text-primary text-[20px]">keyboard_arrow_down</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-primary/10 border border-primary/20 px-4">
+<p class="text-slate-700 dark:text-slate-200 text-sm font-medium leading-normal">Time</p>
+<span class="material-symbols-outlined text-primary text-[20px]">keyboard_arrow_down</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-primary/10 border border-primary/20 px-4">
+<p class="text-slate-700 dark:text-slate-200 text-sm font-medium leading-normal">Terrain</p>
+<span class="material-symbols-outlined text-primary text-[20px]">keyboard_arrow_down</span>
+</button>
+</div>
+<!-- Featured Crews -->
+<section class="py-6">
+<div class="flex items-center justify-between px-4 mb-4">
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">Featured Crews</h2>
+<a class="text-primary text-sm font-semibold" href="#">See All</a>
+</div>
+<div class="flex gap-4 px-4 overflow-x-auto no-scrollbar">
+<!-- Crew Card 1 -->
+<div class="flex flex-col shrink-0 w-40 gap-2">
+<div class="w-full aspect-square rounded-2xl bg-primary/20 bg-cover bg-center overflow-hidden border border-primary/10 shadow-lg" data-alt="Running group crossing a bridge" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQdIilqpZFQk2jf9O_0PAglvh3r_PrNnrnZ75Kd1Z8rgeARYGWrnWQQG58jxdgL1efGrsi1vebwr3_ycYdR4Mm578_qXp9tC14s9Iy-x2udjgHYth4d6kazyfAgNEbrQA7ewHUxq588jihLsiyAFy_QrpI2FeQJirw--drZNW9Xf25Fy2VeXx3u6v5Zeicw2Mh8wZwZkKnSmmtUb3KQoSgrw8pjvdkYzzsb4pudZxljOESZnQVdvTlWewM6FszgV1kx6C-rVJj29Ta");'>
+<div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+<span class="text-white text-xs font-bold uppercase tracking-wider">Active Now</span>
+</div>
+</div>
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">Neon Striderz</p>
+</div>
+<!-- Crew Card 2 -->
+<div class="flex flex-col shrink-0 w-40 gap-2">
+<div class="w-full aspect-square rounded-2xl bg-primary/20 bg-cover bg-center overflow-hidden border border-primary/10 shadow-lg" data-alt="Athletic runner in city setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnvxDV4rWKoO-djS9nHmm2or2TyKc29qlQPnOIjCfaWbQR7ezozUFePHfxVUXL6SOyd3OM2ZKKyFg0DJ7X_duxoNh97wDpVNdRz8gQ32je8WwdlkP4JAC2S4KAXqx6clAgP0Lqz4piuUeGOU4e_d_rnQ9WBPGdkm6ePqa9Wf7ZaVofjpQ_1mq0jsJplVqarUbl-C78gj1zdX67DUDmLK4IllzDAgiuw0ubYCYT3x12RYk5Ynfb8uWUsQkRhPFUbIEBEV9tWA1XzNJ2");'>
+<div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+<span class="text-white text-xs font-bold uppercase tracking-wider">Pro Elite</span>
+</div>
+</div>
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">City Runners</p>
+</div>
+<!-- Crew Card 3 -->
+<div class="flex flex-col shrink-0 w-40 gap-2">
+<div class="w-full aspect-square rounded-2xl bg-primary/20 bg-cover bg-center overflow-hidden border border-primary/10 shadow-lg" data-alt="People running through park trails" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdlCkfiTkgYOWVHYOt_clK06kqiAyc67_X4n3Ks_tq-xFzrwOF6HJZdoifj7Ja0X1leJJMVwGAzVpQQBHg_GQNuFGUtfobjxVdEEqTyB71nIgpq3FPMaYtSTBmWzr9_U3keAMQBLC87eVyXkfrN2x3O_a3JZZTqnYkaok4VhQOQoMImlQUcVOs0UrkirAbHNiOBY4MMmi4qqoMB3JtsUciBX9wlHNbfw1voB4IuIl47TaEY16OBigcrFoEs5rcN2ssO7TuluzMeuwk");'>
+<div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+<span class="text-white text-xs font-bold uppercase tracking-wider">Trail Kings</span>
+</div>
+</div>
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">Wild Trails</p>
+</div>
+</div>
+</section>
+<!-- Upcoming Runs -->
+<section class="flex-1 px-4 py-2 pb-24">
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight mb-4">Upcoming Runs</h2>
+<div class="flex flex-col gap-4">
+<!-- Run Card 1 -->
+<div class="bg-white dark:bg-primary/5 rounded-2xl p-4 border border-primary/10 shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="flex gap-3">
+<div class="flex flex-col items-center justify-center bg-primary text-background-dark font-bold px-3 py-1 rounded-lg">
+<span class="text-xs uppercase">Oct</span>
+<span class="text-lg leading-tight">12</span>
+</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">Sunrise Sprint</h3>
+<p class="text-primary text-xs font-semibold uppercase tracking-wider">City Runners Crew</p>
+</div>
+</div>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 06:30 AM
+                        </span>
+</div>
+<div class="flex flex-col gap-1 text-slate-600 dark:text-slate-300 text-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">location_on</span>
+<span>Central Park, South Entrance</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">distance</span>
+<span>8.5 km • 5'30" /km Pace</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-3 border-t border-primary/10">
+<div class="flex -space-x-2">
+<div class="size-7 rounded-full border-2 border-background-dark bg-cover" data-alt="Avatar of runner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPR5hsz-AgyugFKcQrUJIm5GXrrjp0MMvPMzG7kuYvDKUYSjfJGfpdjw0fA1-RkZvLTCe2gOh-jlZQNRbAOvkAOOxNcDXio32k1ZXQ6jvMAWn6RDnNQxHrFwberzczxaNLpnxKQNCRGHAZdFEwaNqrUyHqMFxZzb1pK7pd-BSsFn0ifhfCSnOtJDhBE1WeN3Ousp4Y6NTgCpN0j3_HUota-J8Apy5FAq79anmlrucadKETClskM5shk3itKqnI3wkF_EMUiri4IOIW')"></div>
+<div class="size-7 rounded-full border-2 border-background-dark bg-cover" data-alt="Avatar of runner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXaxBfibLDSt3ko8IhbxttfyLTBSv8g2MWey4cSUoqtOsGKvMVHB0iz5AFMm6J0RckRt3PY53SDZ6nfnSKxSkEfBpzbt-uZuGfrWc_NOo6QB108wTnvKN_VSS7a0PT8ZlZzO-84eNLPxQX9-IbM49Zt0n4_8qhDxGgP521oS5JTpXKgp-d____KQp94qi_VNyJJT5Fdg-mhN-LmcuBNLWLdoRlKzfz42HbhVoOzuzdsHbnIwYM4ChEUqtLkElhJ0TnZAvptIEkz7Ur')"></div>
+<div class="size-7 rounded-full border-2 border-background-dark bg-cover" data-alt="Avatar of runner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDK3KipEr6gNVnYI7rxxnlZd4-tnc02dkLvHB2USgurblumFmEsKoIDG_0PxFprqSaLn0Q6unqLHvsGws4-kWtFHrZAriVAjq2Y-LaTiEFURkJPg_CbXJN_lsZTbBTqISEL9T5hor0jUl1z4fLuzjAUYk_asq5u_qxz8vyxBu9fNxpJ00SIv6dv-7VM_GMPkG7QUX3CreLmStRaATZVGsldbubeV0vXrJS3WdyZwKKYtAerk9ubh_5EBoIkrGznLq1Qn0jlJ8l42U2u')"></div>
+<div class="size-7 rounded-full border-2 border-background-dark bg-primary/20 flex items-center justify-center text-[10px] font-bold">+12</div>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-background-dark font-bold px-6 py-2 rounded-xl transition-colors">Join Run</button>
+</div>
+</div>
+<!-- Run Card 2 -->
+<div class="bg-white dark:bg-primary/5 rounded-2xl p-4 border border-primary/10 shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="flex gap-3">
+<div class="flex flex-col items-center justify-center bg-primary text-background-dark font-bold px-3 py-1 rounded-lg">
+<span class="text-xs uppercase">Oct</span>
+<span class="text-lg leading-tight">14</span>
+</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">Interval Intensity</h3>
+<p class="text-primary text-xs font-semibold uppercase tracking-wider">Neon Striderz</p>
+</div>
+</div>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 07:00 PM
+                        </span>
+</div>
+<div class="flex flex-col gap-1 text-slate-600 dark:text-slate-300 text-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">location_on</span>
+<span>Olympic Stadium Track</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">distance</span>
+<span>5.0 km • 4'15" /km Pace</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-3 border-t border-primary/10">
+<div class="flex -space-x-2">
+<div class="size-7 rounded-full border-2 border-background-dark bg-cover" data-alt="Avatar of runner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBr2AdGhabyE6doWigE1dg4OkPp4Z3-M4RjdXwOzAR4cRff4AhBY9tyS-UyM32x0lfuPVSnun4aVj4ao9T9EwTY9vAymeHz8mLrSvxaIMj_LxpQRPzdCfLctvs_iDl6j-yKe8WPv_jyumKobkANRQxMpHGMHFVzoot5udUG4PHmIpAp3iG0gksE8b9Qnvj6fKcvY1FQfeKx_GaYLOdEoe1dN-kz-rkQ-Gizjx34S9cMYLARIXO5k8E_dv9n4jVgSHzUDCc_5eMqwJGT')"></div>
+<div class="size-7 rounded-full border-2 border-background-dark bg-cover" data-alt="Avatar of runner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAp_t-VGGcyv-O9riC6DNRpb34cT2OBTiWAk_WZeUXrj3-bY4dn6TOw9xt5X2gyJqVHbuU3h8gaiQg3YmL2hvrO-FKwTLT3M27T9rATL11JXQAVa00-o1auJ3AZY2OBw8fp7HlO-f4y6L0rjOV_zAwI1f1aR2lukw8UTmSmtyMa_ytDbF06cA2tdHCxsT4Si-JQnKCjoAwEvmLpdr2VSRqBPKUw-EnaEqtdCjWHJtQdynRg-DeS4ua8w8mVWXqWcE1326w8r66m4pfS')"></div>
+<div class="size-7 rounded-full border-2 border-background-dark bg-primary/20 flex items-center justify-center text-[10px] font-bold">+8</div>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-background-dark font-bold px-6 py-2 rounded-xl transition-colors">Join Run</button>
+</div>
+</div>
+<!-- Run Card 3 -->
+<div class="bg-white dark:bg-primary/5 rounded-2xl p-4 border border-primary/10 shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="flex gap-3">
+<div class="flex flex-col items-center justify-center bg-primary text-background-dark font-bold px-3 py-1 rounded-lg">
+<span class="text-xs uppercase">Oct</span>
+<span class="text-lg leading-tight">15</span>
+</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">Forest Long Run</h3>
+<p class="text-primary text-xs font-semibold uppercase tracking-wider">Wild Trails</p>
+</div>
+</div>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">schedule</span> 08:00 AM
+                        </span>
+</div>
+<div class="flex flex-col gap-1 text-slate-600 dark:text-slate-300 text-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">location_on</span>
+<span>Pinewood Nature Reserve</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">distance</span>
+<span>15.0 km • 6'00" /km Pace</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-3 border-t border-primary/10">
+<div class="flex -space-x-2">
+<div class="size-7 rounded-full border-2 border-background-dark bg-cover" data-alt="Avatar of runner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkuiwvTRifMd2Nd7ggVJ6h_AoaJuQwaNOlZO7iHYfFuuaZoWJo1jA4PlfVJy2lmJAgX42CeVXeBTV9g4JYixCnEzVw6ToCCNig15qBmTcqPkr9zuu2d9ngF_Jes7RRBQj8haKR5Tkmh_dBoo_S8IUkavVsL9pwBidpXpocr34J8lgKxiqWMR5KtPZ1ga5Tw9tohxieqT3AoUa_q8Yy5tVYiBuJelIe_WGmni63BJNNid9mnmhusaKI_Hyz520QWvQ480mRK_X0Z3Wl')"></div>
+<div class="size-7 rounded-full border-2 border-background-dark bg-primary/20 flex items-center justify-center text-[10px] font-bold">+24</div>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-background-dark font-bold px-6 py-2 rounded-xl transition-colors">Join Run</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-20 flex gap-2 border-t border-primary/10 bg-white dark:bg-background-dark px-4 pb-6 pt-3">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">home</span>
+<p class="text-xs font-semibold leading-normal tracking-wide">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">explore</span>
+<p class="text-xs font-medium leading-normal tracking-wide">Explore</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<p class="text-xs font-medium leading-normal tracking-wide">My Runs</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium leading-normal tracking-wide">Profile</p>
+</a>
+</nav>
+</div>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>
